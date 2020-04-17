@@ -1,6 +1,6 @@
-lyrics = """On the Twelfth day of Christmas
-My true love sent to me
-Twelve Drummers Drumming,
+preamble = """On the %s day of Christmas
+My true love sent to me"""
+lyrics = """Twelve Drummers Drumming,
 Eleven Pipers Piping,
 Ten Lords-a-Leaping,
 Nine Ladies Dancing,
@@ -27,7 +27,5 @@ ordinal = (
     "Twelfth"
 )
 for i, nth in enumerate(ordinal):
-    print(lyrics[0].replace("Twelfth", nth))
-    print(lyrics[1])
-    print("\n".join(lyrics[-i-1:]))
-    print()
+    print(preamble % nth)
+    print("\n".join(lyrics[-i-1:]),"\n")
