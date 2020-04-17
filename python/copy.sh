@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "Copying minified source..."
-mini=$(pyminifier --obfuscate-variables $@)
+mini=$(pyminifier --obfuscate-variables --obfuscate-classes --obfuscate-functions $@)
 echo "Word count (chars):"
 echo "$mini" | wc -c
-printf "%s" "$mini" | xclip -selection clipboard
+printf "%s" "$mini" | head -n -1 | xclip -selection clipboard
 echo "Done!"
