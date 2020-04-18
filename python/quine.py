@@ -31,3 +31,5 @@
 # s = create_string_buffer(100)
 # c.scanf(b'%s', s)
 # print(s.value)
+#  Wikipedia!
+exec(s:='print("exec(s:=%r)"%s, end="")')
