@@ -20,3 +20,14 @@
 #          print(input())
 #  except EOFError:
 #      pass
+
+# FIXME: EOFError
+#  print(input())
+# Related Python issue: https://bugs.python.org/issue17620
+
+# FIXME: still empty
+# from ctypes import *
+# c = cdll.LoadLibrary("libc.so.6")
+# s = create_string_buffer(100)
+# c.scanf(b'%s', s)
+# print(s.value)
