@@ -1,4 +1,3 @@
 for i in range(1,101):
-    s = sum(int(digit) for digit in str(i))
-    if (i % s) == 0:
+    if (i % sum(map(int, str(i)))) == 0:
         print(i)
