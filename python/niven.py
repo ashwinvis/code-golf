@@ -1,8 +1,4 @@
 for i in range(1,101):
-    s = 0
-    j = i
-    while j:
-        s += j % 10
-        j //= 10
+    s = sum(int(digit) for digit in str(i))
     if (i % s) == 0:
         print(i)
