@@ -1,23 +1,17 @@
-subroutine printc(i)
-  implicit none
-  integer i
-  character(3) c
-
-  write(c, '(i3)') i
-  print '(a)', adjustl(c)
-end subroutine
 program main
     implicit none
-    integer i, d1, d10
-    do i = 1, 9
-      call printc(i)
-    end do
-    do i = 10,99
-      d1 = mod(i, 10)
-      d10 = i / 10
-      if (mod(i, d1 + d10) == 0) then
-        call printc(i)
+    character(3) c
+    integer i, j, s
+    do i = 1, 100
+      s = 0
+      j = i
+      do while (j > 0)
+        s = s + mod(j, 10)
+        j = j / 10
+      end do
+      if (mod(i, s) == 0) then
+        write(c, '(i3)') i
+        print '(a)', adjustl(c)
       end if
     end do
-    call printc(100)
 end program
