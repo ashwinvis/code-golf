@@ -5,27 +5,55 @@
 #    pip-compile
 #
 -e git+https://github.com/liftoff/pyminifier.git#egg=pyminifier  # via -r requirements.in
-attrs==19.3.0             # via pytest
-backcall==0.1.0           # via ipython
-decorator==4.4.2          # via ipython, traitlets
-ipython-genutils==0.2.0   # via traitlets
-ipython==7.13.0           # via -r requirements.in
-jedi==0.17.0              # via ipython
-more-itertools==8.2.0     # via pytest
-packaging==20.3           # via pytest
-parso==0.7.0              # via jedi
-pexpect==4.8.0            # via ipython
-pickleshare==0.7.5        # via ipython
-pluggy==0.13.1            # via pytest
-prompt-toolkit==3.0.5     # via ipython
-ptyprocess==0.6.0         # via pexpect
-py==1.8.1                 # via pytest
-pygments==2.6.1           # via ipython
-pyparsing==2.4.7          # via packaging
-pytest==5.4.1             # via -r requirements.in
-six==1.14.0               # via packaging, traitlets
-traitlets==4.3.3          # via ipython
-wcwidth==0.1.9            # via prompt-toolkit, pytest
+    # via -r requirements.in
+attrs==19.3.0
+    # via pytest
+backcall==0.1.0
+    # via ipython
+decorator==4.4.2
+    # via
+    #   ipython
+    #   traitlets
+ipython-genutils==0.2.0
+    # via traitlets
+ipython==7.13.0
+    # via -r requirements.in
+jedi==0.17.0
+    # via ipython
+more-itertools==8.2.0
+    # via pytest
+packaging==20.3
+    # via pytest
+parso==0.7.0
+    # via jedi
+pexpect==4.8.0
+    # via ipython
+pickleshare==0.7.5
+    # via ipython
+pluggy==0.13.1
+    # via pytest
+prompt-toolkit==3.0.5
+    # via ipython
+ptyprocess==0.6.0
+    # via pexpect
+py==1.10.0
+    # via pytest
+pygments==2.6.1
+    # via ipython
+pyparsing==2.4.7
+    # via packaging
+pytest==5.4.1
+    # via -r requirements.in
+six==1.14.0
+    # via
+    #   packaging
+    #   traitlets
+traitlets==4.3.3
+    # via ipython
+wcwidth==0.1.9
+    # via
+    #   prompt-toolkit
+    #   pytest
 
 # The following packages are considered to be unsafe in a requirements file:
 # setuptools
